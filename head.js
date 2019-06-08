@@ -4,7 +4,7 @@ function exec(){
 
 function hook(e){
     function callback(x){
-        document.getElementById('result').src = x.content.data['text/plain'].split("'")[1];
+        result.src = x.content.data['text/plain'].split("'")[1];
     };
     var src = canvas.toDataURL();
     var funcname = 'generate';
@@ -19,4 +19,5 @@ function loaded(){
     canvas.addEventListener("touchend", hook);
 
     fence = document.getElementById('fence').contentWindow;
+    result = document.getElementById('result');
 };
