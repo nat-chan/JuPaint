@@ -1,5 +1,5 @@
-function exec(){
-    fence.Pen.colors['fg'] = "#F00"
+function slider(){
+    fence.Pen.scale = document.getElementById('slider').value;
 };
 
 function hook(e){
